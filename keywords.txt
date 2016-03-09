@@ -1,0 +1,16 @@
+# Keypad Library data types
+LCDKeypadShield	KEYWORD1
+
+# Keypad Library constants
+#sample	LITERAL1
+btnRIGHT	LITERAL1
+btnLEFT	LITERAL1
+btnUP	LITERAL1
+btnDOWN	LITERAL1
+btnNONE	LITERAL1
+
+# Keypad Library methods & functions
+#sample	KEYWORD2
+
+# List of objects created in the example sketches.
+#sample	KEYWORD3
