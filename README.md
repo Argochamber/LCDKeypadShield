@@ -5,18 +5,12 @@
 
 * * *
 
-This library has implemented the library
+This library is a wrapper for `LiquidCrystal.h`. It wraps it's functionality, having already defined the pins that the keypad
+shield uses. It's intended for speeding up prototyping.
+
+### Example of usage
+
 ```C++
-#include <LiquidCrystal.h>
-```
-
-Use it as a _wrapper_ for the shield, the keypad shield pins are the **same every time**, so it's a waste of time to use the `<LiquidCrystal.h>` spare.
-
-### Example of use
-
-Also the usage of a __Shield__ *Speeds up the wiring time*.
-
-```Arduino
 #include <LiquidCrystal.h> // This may not be needed in Linux, but windows does.
 #include <LCDKeypadShield.h>
 
@@ -37,7 +31,7 @@ void loop() {
 
 ##### Without the library implemented
 
-```Arduino
+```C++
 #include <LiquidCrystal.h>
 
 // initialize the library with the numbers of the interface pins
