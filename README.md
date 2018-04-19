@@ -1,12 +1,18 @@
 # LCD Keypad Shield
 ### Arduino
 
+**Note**: The library is two years old, not tested on last version of Arduino.
+
+If you're interested on the project, open an issue.
+
 ##### Argochamber interactive 2016
 
 * * *
 
-This library is a wrapper for `LiquidCrystal.h`. It wraps it's functionality, having already defined the pins that the keypad
-shield uses. It's intended for speeding up prototyping.
+This library is a wrapper for `LiquidCrystal.h`.
+
+It uses almost the same Api, but methods such `init` and the constructor have
+default values that fit the LCD shield.
 
 ### Example of usage
 

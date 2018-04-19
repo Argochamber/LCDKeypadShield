@@ -21,20 +21,20 @@
 class LCDKeypadShield {
 public:
 
-	LCDKeypadShield();
+  LCDKeypadShield(uint8_t rs = 8, uint8_t enable = 9, uint8_t d0 = 4, uint8_t d1 = 5, uint8_t d2 = 6, uint8_t d3 = 7);
 
-	int readInput();
-	int getLastAdc();
+  int readInput();
+  int getLastAdc();
 
-	void print(String s);
-	void setCursor(int x, int y);
-	
-	void init();
-	
+  void print(String s);
+  void setCursor(uint16_t x = 0, uint16_t y = 0);
+
+  void init(uint16_t width = 16, uint16_t height = 2);
+
 protected:
-	LiquidCrystal core;
-	int last_adc;
-	
+  LiquidCrystal core;
+  int last_adc;
+
 };
 
 #endif
